@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseDragged="#borderPaneDragged" onMousePressed="#borderPanePressed" prefHeight="600.0" prefWidth="800.0" stylesheets="@../styles/history.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs211.project.controllers.history.HistoryEventController">
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" styleClass="bg" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="bg">
+               <children>
+                  <Label fx:id="closeButton" layoutX="588.0" layoutY="2.0" onMouseClicked="#closeButtonAction" styleClass="x" text="x" textFill="#767990">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="hideButton" layoutX="572.0" onMouseClicked="#hideButtonAction" styleClass="x" text="_" textFill="#767990">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+                  <Label layoutX="24.0" layoutY="17.0" text="History" textFill="WHITE">
+                     <font>
+                        <Font size="39.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="filterComboBox" layoutX="24.0" layoutY="81.0" prefWidth="150.0" promptText="Sort By" stylesheets="@../styles/sort-combo-box.css" />
+                  <ScrollPane fx:id="scrollPane" layoutX="10.0" layoutY="131.0" prefHeight="470.0" prefWidth="596.0" styleClass="bg">
+                     <content>
+                        <VBox fx:id="historyVBox" alignment="CENTER" prefHeight="130.0" prefWidth="575.0" spacing="20.0">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </VBox>
+                     </content>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ScrollPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </center>
+   <left>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2e303f" height="600.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="193.0" BorderPane.alignment="CENTER" />
+   </left>
+</BorderPane>

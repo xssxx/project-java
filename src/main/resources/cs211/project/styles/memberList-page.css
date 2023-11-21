@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'Albula Pro Normal Bold';
+    src: url("AlbulaPro-NormalBold.otf");
+}
+
+.bg {
+    -fx-background-image: url("../images/assets/memberList-bg.png");
+}
+
+.label{
+    -fx-font-family: 'Albula Pro Normal Bold';
+}
+
+.label-semi{
+    -fx-font-family: 'Albula Pro Normal SemiBold';
+}
+
+.label{
+    -fx-font-family: 'Albula Pro Normal Bold';
+}
+
+.button-gray {
+    -fx-background-color: rgb(83, 86, 106);
+    -fx-position: absolute;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-font-family: 'Albula Pro Normal Bold';
+    -fx-font-size: 12;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0, 0, 0);
+}
+
+.scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar:horizontal, .scroll-bar:vertical{
+    -fx-background-color:transparent;
+}
+
+.increment-button, .decrement-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.scroll-bar:horizontal .track, .scroll-bar:vertical .track{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+.scroll-pane .viewport {
+    -fx-background-color: transparent;
+}
+.grid-pane{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #3c4152;
+    -fx-background-radius: 2px;
+}
+.scroll-pane .corner {
+    -fx-background-color: rgb(40, 42, 55);
+}

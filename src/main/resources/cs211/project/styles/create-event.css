@@ -1,0 +1,98 @@
+@font-face {
+    font-family: 'Albula Pro Normal Bold';
+    src: url("AlbulaPro-NormalBold.otf");
+}
+
+@font-face {
+    font-family: 'Albula Pro Normal SemiBold';
+    src: url("AlbulaPro-NormalSemiBold.otf");
+}
+
+.anchor-pane {
+    -fx-background-image: url("../images/assets/create-bg.png");
+}
+
+.label{
+    -fx-font-family: 'Albula Pro Normal Bold';
+}
+
+.label-semi{
+    -fx-font-family: 'Albula Pro Normal SemiBold';
+}
+
+.text-field {
+    -fx-border-radius: 7px;
+    -fx-background-radius: 7px;
+    -fx-background-color: rgb(50, 54, 69);
+    -fx-position: absolute;
+    -fx-prompt-text-fill: #767990;
+    -fx-text-fill: #767990;
+    -fx-font-family: 'Albula Pro Normal Bold';
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0, 0, 0);
+}
+
+
+.banner {
+    -fx-background-image: url("../images/assets/browse-banner.png");
+}
+
+.text-area .content{
+    -fx-background-color: rgb(50, 54, 69);
+    -fx-border-color: rgb(50, 54, 69);
+    -fx-text-fill: #767990;
+    -fx-prompt-text-fill: #767990;
+    -fx-font-family: 'Albula Pro Normal Bold';
+}
+
+.text-area {
+    -fx-background-color: rgb(50, 54, 69);
+    -fx-text-fill: #767990;
+    -fx-prompt-text-fill: #767990;
+    -fx-font-family: 'Albula Pro Normal Bold';
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0, 0, 0);
+}
+
+.save-button {
+    -fx-background-color: rgb(19, 189, 220);
+    -fx-position: absolute;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-font-family: 'Albula Pro Normal Bold';
+}
+
+.date-picker {
+    -fx-background-color: rgb(50, 54, 69);
+    -fx-text-fill: #767990;
+    -fx-prompt-text-fill: #767990;
+    -fx-font-family: 'Albula Pro Normal Bold';
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0, 0, 0);
+}
+
+.date-picker .arrow-button{
+    -fx-background-color: rgb(83, 86, 106);
+}
+
+.date-picker .arrow {
+    -fx-background-color: rgb(255, 255, 255);
+}
+
+.time-picker {
+    -fx-background-color: rgb(50, 54, 69);
+    -fx-text-fill: #767990;
+    -fx-prompt-text-fill: #767990;
+    -fx-font-family: 'Albula Pro Normal Bold';
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0, 0, 0);
+}
+
+.time-picker .label{
+    -fx-background-color: rgb(50, 54, 69);
+    -fx-text-fill: #767990;
+    -fx-prompt-text-fill: #767990;
+    -fx-font-family: 'Albula Pro Normal Bold';
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0, 0, 0);
+}
+
+.time-picker .box .edit-button{
+    -fx-pref-width: 0;
+    -fx-pref-height: 0;
+}

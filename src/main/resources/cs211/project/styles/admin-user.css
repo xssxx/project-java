@@ -1,0 +1,83 @@
+@font-face {
+    font-family: 'Albula Pro Normal Bold';
+    src: url("AlbulaPro-NormalBold.otf");
+}
+
+@font-face {
+    font-family: 'Albula Pro Normal SemiBold';
+    src: url("AlbulaPro-NormalSemiBold.otf");
+}
+
+.bg {
+    -fx-background-color: #2e303f;
+}
+
+.label {
+    -fx-text-fill: #c5caea;
+}
+
+.button {
+    -fx-background-color: rgb(19, 189, 220);
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-pref-width: 100px;
+    -fx-text-fill: #ffffff;
+}
+
+.list-view .list-cell {
+    -fx-background-color: #53566A;
+    -fx-text-fill: #c5caea;
+}
+
+.list-view .list-cell:selected {
+    -fx-background-color: #484a60 !important;
+}
+
+.list-view {
+    -fx-background-color: #53566A;
+}
+
+.list-view .scroll-bar .track {
+    -fx-background-color: #53566A;
+}
+
+.list-view .scroll-bar .thumb {
+    -fx-background-color: #2e303f;
+}
+
+.label {
+    -fx-font-family: 'Albula Pro Normal SemiBold';
+    -fx-font-size: 14px;
+}
+
+.increment-button .increment-arrow, .decrement-button .decrement-arrow {
+    -fx-shape: null;
+    -fx-background-color: transparent;
+}
+
+.increment-button .decrement-button {
+    -fx-shape: null;
+    -fx-background-color: transparent;
+}
+
+.list-view .scroll-bar .increment-button, .list-view .scroll-bar .decrement-button {
+    -fx-background-color: #53566A;
+}
+
+.list-view .scroll-bar .track {
+    -fx-background-color: #53566A;
+}
+
+.list-view .scroll-bar .thumb {
+    -fx-background-color: #2e303f;
+}
+
+.list-view .corner {
+    -fx-background-color: #53566A;
+}
+
+/* เส้นเล็ก ๆ รอบ ๆ increment decrement button */
+.scroll-bar:horizontal,
+.scroll-bar:vertical {
+    -fx-background-color: #53566A;
+}

@@ -1,0 +1,58 @@
+@font-face {
+    font-family: 'Albula Pro Normal Bold';
+    src: url("AlbulaPro-NormalBold.otf");
+}
+
+@font-face {
+    font-family: 'Albula Pro Normal SemiBold';
+    src: url("AlbulaPro-NormalSemiBold.otf");
+}
+
+.bg {
+    -fx-background-image: url("../images/assets/setting-bg.png");
+}
+
+.label{
+    -fx-font-family: 'Albula Pro Normal Bold';
+}
+
+.label-semi{
+    -fx-font-family: 'Albula Pro Normal SemiBold';
+}
+
+.button-gray {
+    -fx-background-color: rgb(83, 86, 106);
+    -fx-position: absolute;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-font-family: 'Albula Pro Normal Bold';
+    -fx-font-size: 12;
+}
+
+.apply-button {
+    -fx-background-color: rgb(19, 189, 220);
+    -fx-position: absolute;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-font-family: 'Albula Pro Normal Bold';
+    -fx-font-size: 12;
+}
+
+.button-blue {
+    -fx-background-color: rgb(19, 189, 220);
+    -fx-position: absolute;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-font-family: 'Albula Pro Normal Bold';
+    -fx-font-size: 14;
+}
+
+.text-field {
+    -fx-border-radius: 7px;
+    -fx-background-radius: 7px;
+    -fx-background-color: rgb(50, 54, 69);
+    -fx-position: absolute;
+    -fx-prompt-text-fill: #767990;
+    -fx-text-fill: #767990;
+    -fx-font-family: 'Albula Pro Normal Bold';
+}

@@ -1,0 +1,8 @@
+!cs211-661-project-1.0.4-shaded.jar
+!/data/
+!/data/event/*
+!/data/images/*
+!/data/*.csv
+!*.png
+!*.pdf
+!.gitignore

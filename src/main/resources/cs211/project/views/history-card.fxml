@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<HBox fx:id="root" prefHeight="141.0" prefWidth="575.0" styleClass="bg" stylesheets="@../styles/history-card.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs211.project.controllers.history.HistoryCardController">
+   <children>
+      <Rectangle fx:id="ImageRectangle" arcHeight="30.0" arcWidth="30.0" fill="#f23333" height="125.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="161.0">
+         <HBox.margin>
+            <Insets left="5.0" top="26.0" />
+         </HBox.margin></Rectangle>
+      <VBox alignment="CENTER_RIGHT" prefHeight="134.0" prefWidth="343.0" spacing="5.0">
+         <children>
+            <Label text="Event name:" textFill="#c5caea">
+               <VBox.margin>
+                  <Insets left="30.0" top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label text="Date:" textFill="#c5caea">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="30.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label text="Action:" textFill="#c5caea">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="30.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label text="Status:" textFill="#c5caea">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="30.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+         <HBox.margin>
+            <Insets />
+         </HBox.margin>
+         <padding>
+            <Insets bottom="10.0" />
+         </padding>
+      </VBox>
+      <VBox alignment="CENTER" prefHeight="30.0" prefWidth="444.0" spacing="5.0">
+         <children>
+            <Label fx:id="eventLabel" styleClass="label-semi" text="eventLabel" textFill="#c5caea">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="10.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="dateLabel" styleClass="label-semi" text="dateLabel" textFill="#c5caea">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="10.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="actionLabel" styleClass="label-semi" text="actionLabel" textFill="#c5caea">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="10.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="statusLabel" styleClass="label-semi" text="statusLabel" textFill="#c5caea">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="10.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+         <padding>
+            <Insets bottom="10.0" />
+         </padding>
+      </VBox>
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</HBox>

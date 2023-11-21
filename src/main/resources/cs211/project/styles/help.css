@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'Albula Pro Normal Bold';
+    src: url("AlbulaPro-NormalBold.otf");
+}
+
+@font-face {
+    font-family: 'Albula Pro Normal SemiBold';
+    src: url("AlbulaPro-NormalSemiBold.otf");
+}
+
+.bg {
+    -fx-background-color: #2e303f;
+}
+
+.header-label {
+    -fx-text-fill: #c4cae0;
+    -fx-font-size: 20px;
+    -fx-font-style: bold;
+    -fx-font-weight: 700;
+    -fx-font-family: 'Albula Pro Normal Bold';
+}
+
+.content-label {
+    -fx-text-fill: #c4cae0;
+    -fx-font-size: 16px;
+    -fx-font-family: 'Albula Pro Normal SemiBold';
+}
+
+.button-gray {
+    -fx-font-family: 'Albula Pro Normal SemiBold';
+    -fx-background-color: rgb(83, 86, 106);
+    -fx-position: absolute;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-font-size: 12;
+    -fx-text-fill: #c4cae0;
+}

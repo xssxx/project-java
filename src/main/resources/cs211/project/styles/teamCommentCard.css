@@ -1,0 +1,13 @@
+.bg-left {
+    -fx-background-color: #272936;
+    -fx-border-color: #272936;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+}
+
+.bg-right {
+    -fx-background-color: #9aa4ca;
+    -fx-border-color: #9aa4ca;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+}

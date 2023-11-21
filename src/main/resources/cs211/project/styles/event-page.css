@@ -1,0 +1,90 @@
+@font-face {
+    src: url("AlbulaPro-NormalBold.otf");
+}
+
+.search-field {
+    -fx-background-radius: 7;
+    -fx-border-radius: 7;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 10, 0, 0, 4);
+    -fx-background-color: rgb(60, 65, 82);
+    -fx-prompt-text-fill: #bdc2d5;
+    -fx-text-fill: #bdc2d5;
+    -fx-font-family: 'Albula Pro Normal Bold';
+}
+
+.search-line {
+    -fx-background-color: #1f212c;
+}
+
+.bg {
+    -fx-background-color: rgb(40, 42, 55);
+}
+
+.scroll-pane {
+    -fx-background-color: rgb(40, 42, 55);
+}
+
+.scroll-bar:horizontal, .scroll-bar:vertical{
+    -fx-background-color:transparent;
+}
+
+.increment-button, .decrement-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.scroll-bar:horizontal .track, .scroll-bar:vertical .track{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+.scroll-pane .viewport {
+    -fx-background-image: url("../images/assets/eventPg-bg.png");
+}
+.grid-pane{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #3c4152;
+    -fx-background-radius: 2px;
+}
+.scroll-pane .corner {
+    -fx-background-color: rgb(40, 42, 55);
+}
+
+.card {
+    -fx-border-radius: 7px;
+    -fx-background-radius: 7px;
+    -fx-background-color: #323645;
+    -fx-effect: dropshadow(three-pass-box,rgba(0,0,0,0.2),50,0,0,0);
+    -fx-font-size: 16;
+}
+.card-status {
+    -fx-font-size: 14 ;
+}
+.card-count {
+    -fx-font-size: 12;
+}
+
+.count-card-green {
+    -fx-background-color: #8fd728;
+    -fx-border-radius: 7px;
+    -fx-background-radius: 7px;
+}
+
+.count-card-orange {
+    -fx-background-color: #f1aa11;
+    -fx-border-radius: 7px;
+    -fx-background-radius: 7px;
+}
+
+.count-card-red {
+    -fx-background-color: #ee4367;
+    -fx-border-radius: 7px;
+    -fx-background-radius: 7px;
+}
+
+.label {
+    -fx-font-family: 'Albula Pro Normal Bold';
+}

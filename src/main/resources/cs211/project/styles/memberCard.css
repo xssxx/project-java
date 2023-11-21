@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Albula Pro Normal Bold';
+    src: url("AlbulaPro-NormalBold.otf");
+}
+
+@font-face {
+    font-family: 'Albula Pro Normal SemiBold';
+    src: url("AlbulaPro-NormalSemiBold.otf");
+}
+
+.label{
+    -fx-font-family: 'Albula Pro Normal Bold';
+}
+
+.label-semi{
+    -fx-font-family: 'Albula Pro Normal SemiBold';
+}
+
+.button {
+    -fx-background-color: rgb(83, 86, 106);
+    -fx-position: absolute;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-font-family: 'Albula Pro Normal Bold';
+    -fx-font-size: 12;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0, 0, 0);
+}

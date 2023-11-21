@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="270.0" prefWidth="170.0" stylesheets="@../../styles/memberCard.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs211.project.controllers.teamEvent.MemberCardKickController">
+   <children>
+      <AnchorPane prefHeight="270.0" prefWidth="170.0">
+         <children>
+            <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#323645" height="270.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="170.0" />
+            <Circle fx:id="userImage" fill="DODGERBLUE" layoutX="85.0" layoutY="59.0" radius="48.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+            <Label fx:id="nameLabel" alignment="CENTER" layoutY="108.0" prefHeight="27.0" prefWidth="170.0" text="nameLabel" textFill="#c5caea" wrapText="true">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="userNameLabel" alignment="CENTER" layoutY="139.0" prefHeight="21.0" prefWidth="170.0" styleClass="label-semi" text="userNameLabel" textFill="#c5caea" wrapText="true" />
+            <Label fx:id="roleLabel" alignment="CENTER" layoutY="160.0" prefHeight="27.0" prefWidth="170.0" styleClass="label-semi" text="roleLabel" textFill="#c5caea" wrapText="true" />
+            <Button fx:id="reportButton" layoutX="19.0" layoutY="228.0" mnemonicParsing="false" onAction="#onReportMember" prefHeight="25.0" prefWidth="132.0" text="Report" textFill="#c5caea" />
+            <Button fx:id="kickButton" layoutX="19.0" layoutY="189.0" mnemonicParsing="false" onAction="#onKickMember" prefHeight="25.0" prefWidth="132.0" text="Kick" textFill="#c5caea" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

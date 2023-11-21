@@ -1,0 +1,57 @@
+@font-face {
+    src: url("AlbulaPro-NormalBold.otf");
+}
+
+.text-field {
+    -fx-border-radius: 7px;
+    -fx-background-radius: 7px;
+    -fx-background-color: rgb(50, 54, 69);
+    -fx-position: absolute;
+    -fx-prompt-text-fill: #767990;
+    -fx-text-fill: #767990;
+    -fx-font-family: 'Albula Pro Normal Bold';
+}
+
+.background {
+    -fx-background-image: url("../images/assets/register-bg.png");
+    -fx-background-size: 800px 600px;
+    -fx-font-family: 'Albula Pro Normal Bold';
+}
+
+.background2 {
+    -fx-effect: dropshadow(three-pass-box,rgba(0,0,0,0.2),50,0,0,0);
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-font-family: 'Albula Pro Normal Bold';
+}
+
+.left-background {
+    -fx-border-radius: 30px;
+    -fx-background-radius: 30px;
+    -fx-background-color: rgb(87, 93, 129);
+    -fx-opacity: 0.529;
+    -fx-position: absolute;
+    -fx-font-family: 'Albula Pro Normal Bold';
+}
+
+.reg-button {
+    -fx-background-color: rgb(19, 189, 220);
+    -fx-position: absolute;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-font-family: 'Albula Pro Normal Bold';
+}
+
+.text-button{
+    -fx-background-color: rgb(19, 189, 220);
+    -fx-position: absolute;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-font-family: 'Albula Pro Normal Bold';
+}
+
+.label{
+    -fx-font-family: 'Albula Pro Normal Bold';
+}
+
+

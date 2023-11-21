@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'Albula Pro Normal Bold';
+    src: url("AlbulaPro-NormalBold.otf");
+}
+
+@font-face {
+    font-family: 'Albula Pro Normal SemiBold';
+    src: url("AlbulaPro-NormalSemiBold.otf");
+}
+
+.bg {
+    -fx-background-image: url("../images/assets/aboutUs-bg.png");
+}
+
+.label{
+    -fx-font-family: 'Albula Pro Normal Bold';
+}
+
+.label-semi{
+    -fx-font-family: 'Albula Pro Normal SemiBold';
+}

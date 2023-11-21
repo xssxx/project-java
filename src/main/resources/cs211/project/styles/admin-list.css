@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'Albula Pro Normal Bold';
+    src: url("AlbulaPro-NormalBold.otf");
+}
+
+@font-face {
+    font-family: 'Albula Pro Normal SemiBold';
+    src: url("AlbulaPro-NormalSemiBold.otf");
+}
+
+.bg {
+    -fx-background-color: #2e303f;
+}
+
+.label {
+    -fx-text-fill: #c5caea;
+    -fx-font-family: 'Albula Pro Normal SemiBold';
+    -fx-font-size: 15px;
+}
+
+.scroll-pane .viewport {
+    -fx-background-color: #53566A;
+}
+
+.grid-pane{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+
+

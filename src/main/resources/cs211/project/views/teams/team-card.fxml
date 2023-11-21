@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#onMouseClick" prefHeight="50.0" prefWidth="230.0" stylesheets="@../../styles/teamComment-page.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs211.project.controllers.teamEvent.TeamCardController">
+   <children>
+      <Rectangle fx:id="bgTeam" fill="#323645" height="50.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="230.0" />
+      <Label fx:id="eventName" layoutX="14.0" layoutY="17.0" prefHeight="17.0" prefWidth="94.0" text="eventLabel" textFill="WHITE" />
+      <Label fx:id="teamName" layoutX="128.0" layoutY="17.0" prefHeight="17.0" prefWidth="83.0" text="teamLabel" textFill="WHITE" />
+      <Line endX="118.0" endY="38.99998474121094" layoutX="-3.0" layoutY="11.0" startX="118.0" startY="-11.0" stroke="#c5caea" />
+   </children>
+   <cursor>
+      <Cursor fx:constant="HAND" />
+   </cursor>
+</AnchorPane>

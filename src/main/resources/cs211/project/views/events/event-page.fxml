@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.dlsc.gemsfx.SearchTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="root" onMouseDragged="#borderPaneDragged" onMousePressed="#borderPanePressed" prefHeight="600.0" prefWidth="800.0" stylesheets="@../../styles/event-page.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs211.project.controllers.event.EventPageController">
+   <center>
+      <VBox alignment="TOP_CENTER" prefHeight="195.0" prefWidth="283.0" styleClass="event-bg" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER_RIGHT" prefHeight="50.0" prefWidth="607.0" spacing="5.0" styleClass="bg">
+               <children>
+                  <Label fx:id="hideButton" onMouseClicked="#hideButtonAction" styleClass="x" text="_" textFill="#767990">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <padding>
+                        <Insets bottom="3.0" right="3.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="closeButton" onMouseClicked="#closeButtonAction" styleClass="x" text="x" textFill="#767990">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets right="9.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="75.0" prefWidth="675.0" spacing="5.0" styleClass="search-line">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <children>
+                  <SearchTextField fx:id="searchField" style="-fx-background-color: #3c4152; -fx-border-radius: 5; -fx-background-radius: 5;" styleClass="search-field">
+                     <HBox.margin>
+                        <Insets right="190.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Montserrat Medium" size="13.0" />
+                     </font>
+                  </SearchTextField>
+                  <Circle fx:id="profileImage" fill="#464646" radius="17.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Circle>
+                  <Label fx:id="profileLabel" alignment="CENTER" prefHeight="18.0" prefWidth="110.0" text="profileLabel" textFill="#767990">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="BOTTOM_LEFT" prefHeight="60.0" styleClass="bg">
+               <children>
+                  <ComboBox fx:id="filterComboBox" nodeOrientation="LEFT_TO_RIGHT" prefHeight="23.0" prefWidth="111.0" promptText="Sort By" stylesheets="@../../styles/sort-combo-box.css">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets></ComboBox>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="19.0" top="5.0" />
+               </padding>
+            </HBox>
+            <ScrollPane fx:id="scrollpane" maxWidth="-Infinity" prefHeight="525.0" prefWidth="607.0">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <GridPane fx:id="grid" alignment="CENTER" gridLinesVisible="true" hgap="15.0" styleClass="grid-pane" vgap="20.0">
+                  <rowConstraints>
+                     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  </rowConstraints>
+                  <columnConstraints>
+                     <ColumnConstraints />
+                  </columnConstraints>
+                  <padding>
+                     <Insets left="12.0" />
+                  </padding>
+               </GridPane>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="15.0" />
+               </padding>
+            </ScrollPane>
+         </children>
+      </VBox>
+   </center>
+   <left>
+      <Rectangle fill="#2e303f" height="600.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="193.0" BorderPane.alignment="CENTER" />
+   </left>
+</BorderPane>

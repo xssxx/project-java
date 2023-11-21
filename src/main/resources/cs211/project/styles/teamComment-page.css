@@ -1,0 +1,100 @@
+@font-face {
+    font-family: 'Albula Pro Normal Bold';
+    src: url("AlbulaPro-NormalBold.otf");
+}
+
+@font-face {
+    font-family: 'Albula Pro Normal SemiBold';
+    src: url("AlbulaPro-NormalSemiBold.otf");
+}
+
+.bg {
+    -fx-background-image: url("../images/assets/teamComment-bg.png");
+
+}
+
+.label{
+    -fx-font-family: 'Albula Pro Normal Bold';
+}
+
+.label-semi{
+    -fx-font-family: 'Albula Pro Normal SemiBold';
+}
+
+.button-gray {
+    -fx-background-color: rgb(83, 86, 106);
+    -fx-position: absolute;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-font-family: 'Albula Pro Normal Bold';
+    -fx-font-size: 12;
+}
+
+.enter-button {
+    -fx-background-color: rgb(19, 189, 220);
+    -fx-position: absolute;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-font-family: 'Albula Pro Normal Bold';
+    -fx-font-size: 12;
+}
+
+.text-field {
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-background-color: rgb(69, 74, 91);
+    -fx-position: absolute;
+    -fx-prompt-text-fill: #767990;
+    -fx-text-fill: #767990;
+    -fx-font-family: 'Albula Pro Normal Bold';
+}
+
+.sub-background {
+    -fx-border-radius: 7px;
+    -fx-background-radius: 7px;
+    -fx-background-color: rgb(15, 21, 46);
+    -fx-font-family: 'Albula Pro Normal Bold';
+}
+
+.scroll-pane {
+    -fx-background-color: rgb(50, 54, 69);
+}
+
+.scroll-bar:horizontal, .scroll-bar:vertical{
+    -fx-background-color:transparent;
+}
+
+.increment-button, .decrement-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.scroll-bar:horizontal .track, .scroll-bar:vertical .track{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+.scroll-pane .viewport {
+    -fx-background-color: rgb(50, 54, 69);
+}
+.grid-pane{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #3c4152;
+    -fx-background-radius: 2px;
+}
+.scroll-pane .corner {
+    -fx-background-color: rgb(50, 54, 69);
+}
+
+.show-line-comment {
+    -fx-stroke: #c5caea;
+
+}
+
+.select-team {
+    -fx-fill: #272936;
+}
+

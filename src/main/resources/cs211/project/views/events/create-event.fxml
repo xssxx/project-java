@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.dlsc.gemsfx.TimePicker?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseDragged="#borderPaneDragged" onMousePressed="#borderPanePressed" prefHeight="600.0" prefWidth="800.0" stylesheets="@../../styles/create-event.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs211.project.controllers.event.CreateEventController">
+   <left>
+      <Rectangle fill="#2e303f" height="600.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="193.0" BorderPane.alignment="CENTER" />
+   </left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="anchor-pane" BorderPane.alignment="CENTER">
+         <children>
+            <Rectangle fx:id="image" arcHeight="15.0" arcWidth="15.0" fill="#53566a" height="137.0" layoutX="173.0" layoutY="80.0" onMouseClicked="#addImage" stroke="TRANSPARENT" strokeType="INSIDE" strokeWidth="0.0" width="266.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Rectangle>
+            <DatePicker fx:id="start" layoutX="163.0" layoutY="403.0" prefWidth="120.0" promptText="Start date" />
+            <Button layoutX="232.0" layoutY="551.0" mnemonicParsing="false" onAction="#onSave" prefHeight="29.0" prefWidth="144.0" styleClass="save-button" text="Save" textFill="WHITE" />
+            <TextArea fx:id="description" layoutX="60.0" layoutY="314.0" prefHeight="54.0" prefWidth="488.0" promptText="Description" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextArea>
+            <DatePicker fx:id="end" layoutX="326.0" layoutY="403.0" prefWidth="120.0" promptText="End date" />
+            <Label layoutX="21.0" layoutY="16.0" text="Create Event" textFill="WHITE">
+               <font>
+                  <Font size="33.0" />
+               </font>
+            </Label>
+            <Label layoutX="60.0" layoutY="224.0" text="Event name" textFill="#c5caea" />
+            <TextField fx:id="eventNameField" layoutX="60.0" layoutY="246.0" prefHeight="35.0" prefWidth="488.0" promptText="Event name" styleClass="text-field">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <Label fx:id="saveErrorLabel" alignment="CENTER" layoutX="80.0" layoutY="529.0" prefHeight="21.0" prefWidth="442.0" text="Error Label" textFill="RED">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="maxJoinCountField" layoutX="225.0" layoutY="500.0" />
+            <Label layoutX="140.0" layoutY="224.0" text="*" textFill="#ee275f" />
+            <Label layoutX="163.0" layoutY="377.0" text="Event start" textFill="#c5caea" />
+            <Label layoutX="236.0" layoutY="377.0" text="*" textFill="#ee275f" />
+            <Label layoutX="325.0" layoutY="377.0" text="Event end" textFill="#c5caea" />
+            <Label layoutX="392.0" layoutY="377.0" text="*" textFill="#ee275f" />
+            <Label layoutX="60.0" layoutY="291.0" text="Event description" textFill="#c5caea" />
+            <Label layoutX="174.0" layoutY="291.0" text="*" textFill="#ee275f" />
+            <Label layoutX="252.0" layoutY="478.0" text="Max join count" textFill="#c5caea" />
+            <Label layoutX="350.0" layoutY="480.0" text="*" textFill="#ee275f" />
+            <TimePicker fx:id="startTimePicker" layoutX="162.0" layoutY="442.0" prefWidth="120.0" />
+            <TimePicker fx:id="endTimePicker" layoutX="326.0" layoutY="442.0" prefWidth="120.0" />
+            <Line endX="-100.0" endY="82.0" layoutX="403.0" layoutY="390.0" startX="-100.0" stroke="#53566a" strokeWidth="3.0" />
+            <Label fx:id="closeButton" layoutX="587.0" layoutY="3.0" onMouseClicked="#closeButtonAction" styleClass="x" text="x" textFill="#767990">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="hideButton" layoutX="572.0" layoutY="2.0" onMouseClicked="#hideButtonAction" styleClass="x" text="_" textFill="#767990">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

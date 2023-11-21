@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" styleClass="bg" stylesheets="@../styles/help.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs211.project.controllers.help.helpController">
+   <Label layoutX="282.0" layoutY="33.0" styleClass="header-label" text="คำแนะนำการใช้งานโปรแกรม" />
+   <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#onClickBack" prefHeight="23.0" prefWidth="68.0" styleClass="button-gray" text="Back">
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </Button>
+   <VBox layoutX="104.0" layoutY="117.0" prefHeight="452.0" prefWidth="593.0" spacing="10.0">
+      <children>
+         <Label styleClass="content-label" text="1. สามารถสร้างอีเว้นท์ได้ที่หน้า Create" />
+         <Label styleClass="content-label" text="2. สามารถสร้างทีมของอีเว้นท์ที่หน้า Edit -&gt; Edit team" />
+         <Label styleClass="content-label" text="3. สามารถสร้างกิจกรรมของทีมได้ที่หน้า Edit -&gt; Edit Team -&gt; Edit Activity" />
+         <Label styleClass="content-label" text="4. สามารถแชทสื่อสารกันภายในทีมได้ที่หน้า My Team" />
+         <Label styleClass="content-label" text="5. สามารถแก้ไขอีเว้นท์ได้ที่หน้า Edit -&gt; Edit Event" />
+         <Label styleClass="content-label" text="6. สามารถดูรายละเอียดอีเว้นท์โดยการคลิกที่การ์ดอีเว้นท์" />
+         <Label styleClass="content-label" text="7. ผู้ใช้ปกติสามารถเปลี่ยนรหัสผ่าน หรือรูปโปรไฟล์ได้ที่หน้า My Account" />
+         <Label styleClass="content-label" text="8. ผู้ดูแลระบบเมื่อกดหน้า My Account จะเป็นการดูรายละเอียดสมาชิกทั้งหมด สามารถแบนได้" />
+         <Label styleClass="content-label" text="9. สามารถดูประวัติการสร้างอีเว้นท์ หรือการเข้าร่วมอีเว้นท์ที่หน้า History" />
+         <Label styleClass="content-label" text="10. ต้องเลือกทีมที่ตัวเองจะเข้าร่วมก่อนจะเข้าร่วมอีเว้นท์" />
+      </children>
+   </VBox>
+</AnchorPane>

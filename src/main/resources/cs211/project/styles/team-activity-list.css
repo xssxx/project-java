@@ -1,0 +1,182 @@
+@font-face {
+    font-family: 'Albula Pro Normal Bold';
+    src: url("AlbulaPro-NormalBold.otf");
+}
+
+@font-face {
+    font-family: 'Albula Pro Normal SemiBold';
+    src: url("AlbulaPro-NormalSemiBold.otf");
+}
+
+.bg {
+    -fx-background-image: url("../images/assets/activityList-page.png");
+}
+
+.label{
+    -fx-font-family: 'Albula Pro Normal Bold';
+}
+
+.label-semi{
+    -fx-font-family: 'Albula Pro Normal SemiBold';
+}
+
+.button-blue {
+    -fx-background-color: rgb(19, 189, 220);
+    -fx-position: absolute;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-font-family: 'Albula Pro Normal Bold';
+    -fx-font-size: 12;
+}
+
+.button-gray {
+    -fx-background-color: rgb(83, 86, 106);
+    -fx-position: absolute;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-font-family: 'Albula Pro Normal Bold';
+    -fx-font-size: 12;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0, 0, 0);
+}
+
+.text-field {
+    -fx-border-radius: 7px;
+    -fx-background-radius: 7px;
+    -fx-background-color: rgb(50, 54, 69);
+    -fx-position: absolute;
+    -fx-prompt-text-fill: #767990;
+    -fx-text-fill: #767990;
+    -fx-font-family: 'Albula Pro Normal Bold';
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0, 0, 0);
+}
+
+.text-area .content{
+    -fx-background-color: rgb(50, 54, 69);
+    -fx-border-color: rgb(50, 54, 69);
+    -fx-text-fill: #767990;
+    -fx-prompt-text-fill: #767990;
+    -fx-font-family: 'Albula Pro Normal Bold';
+}
+
+.text-area {
+    -fx-background-color: rgb(50, 54, 69);
+    -fx-text-fill: #767990;
+    -fx-prompt-text-fill: #767990;
+    -fx-font-family: 'Albula Pro Normal Bold';
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0, 0, 0);
+}
+
+.date-picker {
+    -fx-background-color: rgb(50, 54, 69);
+    -fx-text-fill: #767990;
+    -fx-prompt-text-fill: #767990;
+    -fx-font-family: 'Albula Pro Normal Bold';
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0, 0, 0);
+}
+
+.date-picker .arrow-button{
+    -fx-background-color: rgb(83, 86, 106);
+}
+
+.date-picker .arrow {
+    -fx-background-color: rgb(255, 255, 255);
+}
+
+.time-picker {
+    -fx-background-color: rgb(50, 54, 69);
+    -fx-text-fill: #767990;
+    -fx-prompt-text-fill: #767990;
+    -fx-font-family: 'Albula Pro Normal Bold';
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0, 0, 0);
+}
+
+.time-picker .label{
+    -fx-background-color: rgb(50, 54, 69);
+    -fx-text-fill: #767990;
+    -fx-prompt-text-fill: #767990;
+    -fx-font-family: 'Albula Pro Normal Bold';
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0, 0, 0);
+}
+
+.time-picker .box .edit-button{
+    -fx-pref-width: 0;
+    -fx-pref-height: 0;
+}
+
+.table-view,
+.table-view .table-cell{
+    -fx-background-color: transparent;
+    -fx-font-family: 'Albula Pro Normal SemiBold';
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0, 0, 0);
+    -fx-text-fill: #c5caea;
+    -fx-alignment: center;
+    -fx-stroke-width: 0;
+}
+
+.table-view .label{
+    -fx-text-fill: #c5caea;
+}
+
+/* fix top right corner white */
+.table-view .column-header-background {
+    -fx-background-color: #53566A;
+}
+
+.table-view .column-header,
+.table-view .column-header .show-hide{
+    -fx-background-color: #53566AFF;
+    -fx-font-family: 'Albula Pro Normal SemiBold';
+    -fx-text-fill: #c5caea;
+}
+
+.table-view .column-header .label {
+    -fx-background-color: #53566A;
+}
+
+.table-view .filler {
+    -fx-background-color: transparent !important;
+}
+
+.table-view .corner {
+    -fx-background-color: #2e303f;
+    -fx-border-color: #2e303f;
+}
+
+.table-row-cell{
+    -fx-table-cell-border-color: transparent;
+}
+.table-row-cell:selected {
+    -fx-background-color: #484a60 !important;
+}
+.table-view .table-row-cell {
+    -fx-background-color: #2e303f;
+}
+.scroll-pane {
+    -fx-background-color: rgb(50, 54, 69);
+}
+
+.scroll-bar:horizontal, .scroll-bar:vertical{
+    -fx-background-color:#2e303f;
+}
+
+.increment-button, .decrement-button {
+    -fx-background-color:transparent;
+    -fx-background-radius: 0em;
+    -fx-padding: 5;
+}
+
+.increment-arrow, .decrement-arrow {
+    -fx-shape: null;
+    -fx-padding: 0;
+}
+
+.scroll-bar:horizontal .track, .scroll-bar:vertical .track {
+    -fx-background-color: #2e303f;
+    -fx-border-color: #2e303f;
+}
+
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #3c4152;
+    -fx-background-radius: 2px;
+}

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="root" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs211.project.controllers.aboutUs.AboutUsController">
+   <left>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2e303f" height="600.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="193.0" BorderPane.alignment="CENTER" />
+   </left>
+   <center>
+      <AnchorPane fx:id="anchorPane" onMouseDragged="#anchorPaneDragged" onMousePressed="#anchorPanePressed" styleClass="bg" stylesheets="@../styles/about-us.css" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" layoutX="105.0" layoutY="82.0" styleClass="label-semi" text="6510450879" textFill="WHITE">
+               <font>
+                  <Font name="Montserrat SemiBold" size="14.0" />
+               </font>
+            </Label>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#edf2ff" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+            <Label alignment="CENTER" layoutX="38.0" layoutY="247.0" styleClass="label-semi" text="Mr. Yossawaj Bowonsrithananon" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </Label>
+            <Label alignment="CENTER" layoutX="43.0" layoutY="499.0" prefHeight="27.0" prefWidth="215.0" styleClass="label-semi" text="Mr. Pasin Chearasirisin" textFill="WHITE">
+               <font>
+                  <Font name="Montserrat Medium" size="14.0" />
+               </font>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </Label>
+            <Label alignment="CENTER" layoutX="303.0" layoutY="247.0" prefHeight="27.0" prefWidth="295.0" styleClass="label-semi" text="Mr. Prariyavit Tachakitmatetumrong" textFill="WHITE">
+               <font>
+                  <Font name="Montserrat Medium" size="14.0" />
+               </font>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </Label>
+            <Label alignment="CENTER" layoutX="315.0" layoutY="499.0" prefHeight="27.0" prefWidth="278.0" styleClass="label-semi" text="Mr. Puri Limwongrujirat" textFill="WHITE">
+               <font>
+                  <Font name="Montserrat Medium" size="14.0" />
+               </font>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </Label>
+            <Label alignment="CENTER" layoutX="408.0" layoutY="82.0" styleClass="label-semi" text="6510450593" textFill="WHITE">
+               <font>
+                  <Font name="Montserrat SemiBold" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="411.0" layoutY="334.0" styleClass="label-semi" text="6510450844" textFill="WHITE">
+               <font>
+                  <Font name="Montserrat SemiBold" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="107.0" layoutY="334.0" styleClass="label-semi" text="6510450712" textFill="WHITE">
+               <font>
+                  <Font name="Montserrat SemiBold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="209.0" layoutY="17.0" prefHeight="50.0" prefWidth="204.0" text="About Us" textFill="WHITE">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <Label fx:id="closeButton" layoutX="587.0" layoutY="3.0" onMouseClicked="#closeButtonAction" styleClass="x" text="x" textFill="#767990">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label fx:id="hideButton" layoutX="572.0" layoutY="2.0" onMouseClicked="#hideButtonAction" styleClass="x" text="_" textFill="#767990">
+               <font>
+                  <Font name="Symbol" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label alignment="CENTER" layoutX="43.0" layoutY="534.0" prefHeight="27.0" prefWidth="215.0" styleClass="label-semi" text="(Mos)" textFill="WHITE">
+               <font>
+                  <Font name="Montserrat Medium" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="317.0" layoutY="534.0" prefHeight="27.0" prefWidth="278.0" styleClass="label-semi" text="(Chokun/Moy)" textFill="WHITE">
+               <font>
+                  <Font name="Montserrat Medium" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="305.0" layoutY="274.0" prefHeight="27.0" prefWidth="295.0" styleClass="label-semi" text="(X)" textFill="WHITE">
+               <font>
+                  <Font name="Montserrat Medium" size="14.0" />
+               </font>
+               <padding>
+                  <Insets top="6.0" />
+               </padding>
+            </Label>
+            <Label alignment="CENTER" layoutX="125.0" layoutY="275.0" styleClass="label-semi" text="(Fluke)" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <padding>
+                  <Insets top="6.0" />
+               </padding>
+            </Label>
+            <Circle fx:id="fluke" fill="DODGERBLUE" layoutX="148.0" layoutY="182.0" radius="75.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fill="DODGERBLUE" layoutX="453.0" layoutY="182.0" radius="75.0" stroke="BLACK" strokeType="INSIDE" fx:id="x" />
+            <Circle fx:id="mos" fill="DODGERBLUE" layoutX="151.0" layoutY="434.0" radius="75.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="moy" fill="DODGERBLUE" layoutX="454.0" layoutY="434.0" radius="75.0" stroke="BLACK" strokeType="INSIDE" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

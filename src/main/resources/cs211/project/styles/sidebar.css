@@ -1,0 +1,19 @@
+@font-face {
+        src: url("AlbulaPro-NormalBold.otf");
+}
+
+.background{
+        -fx-background-color: rgb(46, 48, 63);
+}
+
+.text-button{
+        -fx-background-color: rgb(19, 189, 220);
+        -fx-position: absolute;
+        -fx-border-radius: 20px;
+        -fx-background-radius: 20px;
+        -fx-font-family: 'Albula Pro Normal Bold';
+}
+
+.label{
+        -fx-font-family: 'Albula Pro Normal Bold';
+}

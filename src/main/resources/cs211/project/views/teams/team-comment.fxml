@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="root" onMouseDragged="#borderPaneDragged" onMousePressed="#borderPanePressed" prefHeight="600.0" prefWidth="800.0" styleClass="bg" stylesheets="@../../styles/teamComment-page.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs211.project.controllers.teamEvent.TeamCommentController">
+   <center>
+      <HBox prefHeight="600.0" prefWidth="675.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane prefWidth="337.0">
+               <children>
+                  <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#323645" height="506.0" layoutX="15.0" layoutY="80.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" styleClass="sub-background" width="274.0" />
+                  <Label layoutX="15.0" layoutY="11.0" text="My team" textFill="WHITE">
+                     <font>
+                        <Font size="34.0" />
+                     </font>
+                  </Label>
+                  <ScrollPane layoutX="25.0" layoutY="135.0" prefHeight="441.0" prefWidth="254.0">
+                     <content>
+                        <VBox fx:id="chatBox" prefHeight="30.0" prefWidth="235.0" />
+                     </content>
+                  </ScrollPane>
+                  <Label layoutX="28.0" layoutY="88.0" text="Team name" textFill="#c5caea">
+                     <font>
+                        <Font size="16.0" />
+                     </font></Label>
+                  <Line endX="148.0" layoutX="128.0" layoutY="125.0" startX="-100.0" stroke="#c5caea" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefWidth="337.0">
+               <children>
+                  <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#323645" height="506.0" layoutX="15.0" layoutY="80.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" styleClass="sub-background" width="274.0" />
+                  <ScrollPane fx:id="commentScrollPane" layoutX="25.0" layoutY="135.0" prefHeight="383.0" prefWidth="254.0">
+                     <content>
+                        <VBox fx:id="commentBox" prefHeight="30.0" prefWidth="230.0" />
+                     </content>
+                  </ScrollPane>
+                  <TextField fx:id="commentTextField" disable="true" layoutX="25.0" layoutY="545.0" prefHeight="29.0" prefWidth="167.0" promptText="what are you thinking..">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </TextField>
+                  <Button fx:id="commentEnter" disable="true" layoutX="202.0" layoutY="545.0" mnemonicParsing="false" onAction="#enter" prefHeight="25.0" prefWidth="77.0" styleClass="enter-button" text="Enter" textFill="WHITE" />
+                  <Label fx:id="commentLabel" disable="true" layoutX="25.0" layoutY="521.0" text="Comment" textFill="WHITE" />
+                  <Label fx:id="teamLabel" layoutX="66.0" layoutY="88.0" prefHeight="28.0" prefWidth="211.0" styleClass="label-semi" text="teamLabel" textFill="#c5caea" wrapText="true">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Line fx:id="lineChat" endX="148.0" layoutX="128.0" layoutY="125.0" startX="-100.0" stroke="#323645" />
+                  <Circle fx:id="iconChat" fill="#323645" layoutX="41.0" layoutY="102.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+                  <Label fx:id="hideButton" layoutX="268.0" layoutY="1.0" onMouseClicked="#hideButtonAction" styleClass="x" text="_" textFill="#767990">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+                  <Label fx:id="closeButton" layoutX="283.0" layoutY="2.0" onMouseClicked="#closeButtonAction" styleClass="x" text="x" textFill="#767990">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+   </center>
+   <left>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="600.0" stroke="BLACK" strokeType="INSIDE" width="193.0" BorderPane.alignment="CENTER" />
+   </left>
+</BorderPane>

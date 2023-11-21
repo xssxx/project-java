@@ -1,0 +1,23 @@
+@font-face {
+    src: url("AlbulaPro-NormalBold.otf");
+}
+
+.scroll-pane .viewport {
+    -fx-background-image: url("../images/assets/history-bg.png");
+}
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #3c4152;
+    -fx-background-radius: 2px;
+}
+.scroll-bar:horizontal, .scroll-bar:vertical{
+    -fx-background-color:transparent;
+}
+
+.bg {
+    -fx-background-color: #282a37;
+}
+
+.label {
+    -fx-font-family: 'Albula Pro Normal Bold';
+}

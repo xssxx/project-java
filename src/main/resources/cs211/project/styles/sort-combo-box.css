@@ -1,0 +1,84 @@
+@font-face {
+    src: url("AlbulaPro-NormalBold.otf");
+}
+
+.combo-box .list-cell
+{
+    -fx-background: #282a37;
+    -fx-background-color: transparent;
+    -fx-font-family: 'Albula Pro Normal Bold';
+    -fx-text-fill: #767990;
+}
+
+.combo-box-popup .list-view
+{
+    -fx-background-color: #282a37, #282a37;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 8, 0.0 , 0 , 0 );
+    -fx-font-family: 'Albula Pro Normal Bold';
+}
+
+.combo-box-popup .list-view .list-cell
+{
+    -fx-padding: 4 0 4 5;
+
+    /* No alternate highlighting */
+    -fx-background-color: #282a37;
+    -fx-font-family: 'Albula Pro Normal Bold';
+}
+
+.combo-box-popup .list-view .list-cell:filled:selected, .combo-box-popup .list-view .list-cell:filled:selected:hover
+{
+    -fx-background: -fx-accent;
+    -fx-background-color: -fx-selection-bar;
+    -fx-text-fill: -fx-selection-bar-text;
+    -fx-font-family: 'Albula Pro Normal Bold';
+}
+
+.combo-box-popup .list-view .list-cell:filled:hover
+{
+    -fx-background-color: #282a37;
+    -fx-text-fill: #767990;
+    -fx-font-family: 'Albula Pro Normal Bold';
+}
+
+.combo-box-base
+{
+    -fx-background-color: #282a37, #282a37, #282a37, #282a37;
+    -fx-background-radius: 5, 5, 4, 3;
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+    -fx-padding: 0;
+    -fx-font-family: 'Albula Pro Normal Bold';
+}
+
+.combo-box-base .label {
+    -fx-text-fill: #ffffff;
+}
+
+.combo-box-base:hover
+{
+    -fx-color: -fx-hover-base;
+    -fx-font-family: 'Albula Pro Normal Bold';
+}
+
+.combo-box-base:showing
+{
+    -fx-color: -fx-pressed-base;
+    -fx-font-family: 'Albula Pro Normal Bold';
+}
+
+.combo-box-base:focused {
+    -fx-background-color: #393d4f, #393d4f, #393d4f, #393d4f;
+    -fx-background-radius: 6.4, 4, 5, 3;
+    -fx-background-insets: -1.4, 0, 1, 2;
+    -fx-font-family: 'Albula Pro Normal Bold';
+}
+
+.combo-box-base:disabled {
+    -fx-opacity: .4;
+    -fx-font-family: 'Albula Pro Normal Bold';
+}
+
+.choice-box .context-menu {
+    -fx-background-color: #282a37, #282a37, #282a37, #282a37;
+}

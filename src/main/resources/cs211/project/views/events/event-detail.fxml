@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseDragged="#borderPaneDragged" onMousePressed="#borderPanePressed" prefHeight="600.0" prefWidth="800.0" stylesheets="@../../styles/eventDetail-page.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs211.project.controllers.event.EventDetailController">
+   <left>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2e303f" height="600.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="193.0" BorderPane.alignment="CENTER" />
+   </left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="bg" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="joinCount" layoutX="388.0" layoutY="250.0" styleClass="label-semi" text="joinCount" textFill="#c5caea" />
+            <Button fx:id="teamMemberListButton" layoutX="395.0" layoutY="498.0" mnemonicParsing="false" onAction="#viewTeamMemberList" prefHeight="30.0" prefWidth="190.0" styleClass="button-gray" text="Team Member List" textFill="#c5caea">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="joinEventButton" layoutX="395.0" layoutY="538.0" mnemonicParsing="false" onAction="#onClickJoin" prefHeight="40.0" prefWidth="190.0" styleClass="button-blue" text="Join Event" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label fx:id="joinErrorLabel" alignment="CENTER" layoutX="205.0" layoutY="469.0" prefWidth="193.0" text="Error Label" textFill="RED" />
+            <Label fx:id="description" alignment="TOP_LEFT" layoutX="392.0" layoutY="104.0" prefHeight="63.0" prefWidth="195.0" styleClass="label-semi" text="descriptionLabel" textFill="#c5caea" wrapText="true" />
+            <TableView fx:id="scheduleTable" layoutX="16.0" layoutY="300.0" prefHeight="157.0" prefWidth="575.0" />
+            <ChoiceBox fx:id="teamChoice" layoutX="105.0" layoutY="237.0" prefHeight="29.0" prefWidth="180.0" stylesheets="@../../styles/sort-combo-box.css">
+               <styleClass>
+                  <String fx:value="combo-box" />
+                  <String fx:value="combo-box-base" />
+                  <String fx:value="combo-box-popup" />
+                  <String fx:value="choice-box" />
+               </styleClass></ChoiceBox>
+            <Label fx:id="creator" alignment="CENTER" layoutX="368.0" layoutY="225.0" styleClass="label-semi" text="creator" textFill="#c5caea" wrapText="true" />
+            <Label fx:id="end" alignment="CENTER" layoutX="473.0" layoutY="200.0" prefWidth="80.0" styleClass="label-semi" text="end" textFill="#c5caea" />
+            <Label fx:id="eventName" layoutX="357.0" layoutY="79.0" prefWidth="231.0" styleClass="label-semi" text="eventName" textFill="#c5caea" wrapText="true" />
+            <Label fx:id="start" alignment="CENTER" layoutX="349.0" layoutY="200.0" prefWidth="80.0" styleClass="label-semi" text="start" textFill="#c5caea" />
+            <Label fx:id="startTime" alignment="CENTER" layoutX="349.0" layoutY="176.0" prefWidth="80.0" styleClass="label-semi" text="startTime" textFill="#c5caea" />
+            <Label fx:id="endTime" alignment="CENTER" layoutX="473.0" layoutY="176.0" prefWidth="80.0" styleClass="label-semi" text="endTime" textFill="#c5caea" />
+            <Label layoutX="16.0" layoutY="10.0" text="Event Detail" textFill="WHITE">
+               <font>
+                  <Font size="33.0" />
+               </font>
+            </Label>
+            <Label layoutX="19.0" layoutY="239.0" text="Team/Sec" textFill="#c5caea">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Rectangle fx:id="eventImage" arcHeight="15.0" arcWidth="15.0" fill="#53566a" height="137.0" layoutX="19.0" layoutY="84.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="266.0" />
+            <Label fx:id="eventName1" layoutX="305.0" layoutY="79.0" text="Name:" textFill="#c5caea" />
+            <Label fx:id="eventName11" layoutX="305.0" layoutY="104.0" text="Description:" textFill="#c5caea" />
+            <Label fx:id="eventName111" layoutX="305.0" layoutY="176.0" text="Time:" textFill="#c5caea" />
+            <Label fx:id="eventName1111" alignment="CENTER" layoutX="448.0" layoutY="176.0" text="-" textFill="#c5caea" />
+            <Label fx:id="eventName1112" layoutX="305.0" layoutY="200.0" text="Date" textFill="#c5caea" />
+            <Label fx:id="eventName11111" alignment="CENTER" layoutX="448.0" layoutY="200.0" text="-" textFill="#c5caea" />
+            <Label fx:id="eventName11121" layoutX="305.0" layoutY="225.0" text="Creator:" textFill="#c5caea" />
+            <Label fx:id="eventName111211" layoutX="305.0" layoutY="250.0" text="Join Count:" textFill="#c5caea" />
+            <Label fx:id="closeButton" layoutX="587.0" layoutY="3.0" onMouseClicked="#closeButtonAction" styleClass="x" text="x" textFill="#767990">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="hideButton" layoutX="572.0" layoutY="2.0" onMouseClicked="#hideButtonAction" styleClass="x" text="_" textFill="#767990">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Button fx:id="eventMemberListButton" layoutX="195.0" layoutY="498.0" mnemonicParsing="false" onAction="#viewEventMemberList" prefHeight="30.0" prefWidth="190.0" styleClass="button-gray" text="Event Member List" textFill="#c5caea">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'Albula Pro Normal Bold';
+    src: url("AlbulaPro-NormalBold.otf");
+}
+
+@font-face {
+    font-family: 'Albula Pro Normal SemiBold';
+    src: url("AlbulaPro-NormalSemiBold.otf");
+}
+
+.bg {
+    -fx-background-color: rgba(54, 58, 81, 0.53);
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+}
+
+.radius {
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+}
+
+.label{
+    -fx-font-family: 'Albula Pro Normal Bold';
+    -fx-font-size: 16;
+}
+
+.label-semi{
+    -fx-font-family: 'Albula Pro Normal SemiBold';
+    -fx-font-size: 16;
+}

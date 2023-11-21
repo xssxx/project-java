@@ -1,0 +1,18 @@
+.button {
+    -fx-background-color: #F5EDED;
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+    -fx-border-color: #F87EAA;
+    -fx-text-fill: #B25A8F;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #DBC1C1;
+}
+
+.card {
+    -fx-background-color: #F6DEDE;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+}

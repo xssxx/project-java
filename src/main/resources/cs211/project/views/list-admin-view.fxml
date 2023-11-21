@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="root" onMousePressed="#borderPanePressed" onMouseDragged="#borderPaneDragged" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" styleClass="bg" stylesheets="@../styles/admin-list.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs211.project.controllers.admin.AdminController">
+   <center>
+      <AnchorPane prefHeight="535.0" prefWidth="555.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="600.0" prefWidth="607.0">
+               <children>
+                  <AnchorPane fx:id="anchorPane" onMousePressed="#anchorPanePressed" onMouseDragged="#anchorPaneDragged" prefHeight="39.0" prefWidth="607.0">
+                     <children>
+                        <Label fx:id="closeButton" layoutX="591.0" layoutY="4.0" onMouseClicked="#closeButtonAction" styleClass="x" text="x" textFill="#767990">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="hideButton" layoutX="576.0" layoutY="2.0" onMouseClicked="#hideButtonAction" styleClass="x" text="_" textFill="#767990">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <Label text="Admin">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="TOP_RIGHT" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <ChoiceBox fx:id="choiceBox" prefWidth="150.0" stylesheets="@../styles/sort-combo-box.css">
+                           <styleClass>
+                              <String fx:value="combo-box" />
+                              <String fx:value="combo-box-base" />
+                              <String fx:value="combo-box-popup" />
+                           </styleClass>
+                           <HBox.margin>
+                              <Insets right="30.0" />
+                           </HBox.margin>
+                        </ChoiceBox>
+                     </children>
+                  </HBox>
+                  <ScrollPane fx:id="scrollpane" prefHeight="450.0">
+                     <VBox.margin>
+                        <Insets bottom="40.0" left="40.0" right="40.0" />
+                     </VBox.margin>
+                     <content>
+                        <GridPane fx:id="grid" vgap="5.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                        </GridPane>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </center>
+   <left>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="600.0" stroke="BLACK" strokeType="INSIDE" width="193.0" BorderPane.alignment="CENTER" />
+   </left>
+</BorderPane>

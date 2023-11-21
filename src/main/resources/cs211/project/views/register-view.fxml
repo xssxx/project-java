@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseDragged="#anchorPaneDragged" onMousePressed="#anchorPanePressed" prefHeight="600.0" prefWidth="800.0" styleClass="background" stylesheets="@../styles/register.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs211.project.controllers.register.RegisterController">
+   <children>
+      <Rectangle arcHeight="30.0" arcWidth="30.0" fill="#363a51" height="488.0" layoutX="70.0" layoutY="56.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" styleClass="left-background" width="288.0" />
+      <Button alignment="CENTER" layoutX="121.0" layoutY="375.0" mnemonicParsing="false" onAction="#addImage" prefHeight="31.0" prefWidth="186.0" styleClass="text-button" text="Change Profile" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fx:id="showImage" fitHeight="133.0" fitWidth="126.0" layoutX="151.0" layoutY="186.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(three-pass-box,rgba(0,0,0,0.25),20,0,0,1);">
+         <image>
+            <Image url="@../images/profiles/avatars.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="giveFirstName" layoutX="413.0" layoutY="173.0" prefHeight="38.0" prefWidth="172.0" promptText="First name">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <TextField fx:id="giveLastName" layoutX="594.0" layoutY="173.0" prefHeight="38.0" prefWidth="172.0" promptText="Last name" styleClass="text-field" />
+      <TextField fx:id="giveUserName" layoutX="413.0" layoutY="233.0" prefHeight="38.0" prefWidth="353.0" promptText="Username" styleClass="text-field" />
+      <PasswordField fx:id="givePassword" layoutX="413.0" layoutY="301.0" prefHeight="38.0" prefWidth="353.0" promptText="Password" />
+      <PasswordField fx:id="giveConfirmPassword" layoutX="413.0" layoutY="370.0" prefHeight="38.0" prefWidth="353.0" promptText="Confirm password" />
+      <Button layoutX="475.0" layoutY="439.0" mnemonicParsing="false" onAction="#signUp" prefHeight="38.0" prefWidth="226.0" styleClass="reg-button" text="Sign up" textAlignment="CENTER" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="420.0" layoutY="84.0" text="Register" textFill="WHITE">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+      <Label fx:id="errorLabel" layoutX="413.0" layoutY="412.0" prefHeight="17.0" prefWidth="234.0" text="errorLabel" textFill="RED">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="420.0" layoutY="134.0" text="Already have an account?" textFill="#aeaeae">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="611.0" layoutY="134.0" onMouseClicked="#onClickSignIn" text="Sign In" textFill="#13bddc" underline="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="570.0" layoutY="84.0" text="." textFill="#13bddc">
+         <font>
+            <Font name="Montserrat Bold" size="33.0" />
+         </font>
+      </Label>
+      <Label fx:id="closeButton" layoutX="780.0" layoutY="3.0" onMouseClicked="#closeButtonAction" styleClass="x" text="x" textFill="#767990">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label fx:id="hideButton" layoutX="765.0" layoutY="1.0" onMouseClicked="#hideButtonAction" styleClass="x" text="_" textFill="#767990">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+   </children>
+</AnchorPane>
